@@ -1,13 +1,14 @@
 CC=gcc
 CFLAGS=-c -Wall -Werror
-SOURCES=src/frecuencias.c
+LDFLAGS=
+SOURCES=src/frecuencias.c src/main.c
 OBJECTS=$(SOURCES:.c=.o)
 EXECUTABLE=test
 
 all: $(EXECUTABLE)
 
 $(EXECUTABLE): compile
-	$(CC) $(OBJECTS) -o $@
+	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
 
 compile:
 	$(CC) $(SOURCES)
