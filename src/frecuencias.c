@@ -17,3 +17,17 @@ explorar_texto(FILE* file) {
     printf("hoal");
   }
 }
+
+void
+crea_arreglo_frecuencia(struct frecuencia arr[]) {
+  int i;
+  char c;
+  struct frecuencia aux;
+  for(i = 0; i < TAMANO; i++) {
+    c = ALFABETO[i];
+    aux.letra = c;
+    printf("%c\n",c);
+    aux.repeticion = 0;
+    arr[i] = aux;
+  }
+}

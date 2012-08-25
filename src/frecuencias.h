@@ -1,12 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define ALFABETO abcdefghijklmnopqrstuvwxyz
+#define ALFABETO "abcdefghijklmnopqrstuvwxyz"
+#define TAMANO 26
 
 struct frecuencia {
   char letra;
   int repeticion;
 };
+
+/* Arreglo con las frecuencias del alfabeto.
+*/
+//struct frecuencia arreglo_letras[];
 
 /* Funcion que se encarga de leer un archivo
  * y lo pasa a un tipo File, si no lo puede abrir
@@ -21,8 +26,7 @@ leer_archivo(char* nombre_archivo);
 void
 explora_texto(FILE* archivo);
 
-/* Funcion que busca un caracter y suma 1
- * automaticamente a la frecuencia del caracter.
+/*
 */
 void
-aumentar(char letra, struct frecuencia **arr);
+crea_arreglo_frecuencia(struct frecuencia arr[]);
