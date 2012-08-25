@@ -25,5 +25,4 @@ explora_texto(FILE* archivo);
  * automaticamente a la frecuencia del caracter.
 */
 void
-aumentar(char letra);
-
+aumentar(char letra, struct frecuencia **arr);
