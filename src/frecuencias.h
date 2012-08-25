@@ -20,7 +20,7 @@ leer_archivo(char* nombre_archivo);
 /* Recorre todo el texto contando las frecuencias.
 */
 void
-explora_texto(FILE* archivo);
+explora_texto(FILE* archivo, struct frecuencia arr[]);
 
 /* Crea un arreglo tamano 26 con las frecuencias
  * inicializandola en 0.
@@ -28,5 +28,13 @@ explora_texto(FILE* archivo);
 void
 crea_arreglo_frecuencia(struct frecuencia arr[]);
 
-int
-buscar_caracter(char caracter);
+//
+void
+aumentar(char caracter, struct frecuencia arr[]);
+
+void
+imprime_lista_de_frecuencias(struct frecuencia arr[]);
+
+
+void
+sort(struct frecuencia arr[]);
