@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-c -Wall -Werror
 LDFLAGS=
-SOURCES=src/frecuencias.c src/datos.h src/main.c 
+SOURCES=src/frecuencias.c src/main.c 
 OBJECTS=$(SOURCES:.c=.o)
 EXECUTABLE=test
 

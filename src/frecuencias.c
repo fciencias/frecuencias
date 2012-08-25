@@ -14,7 +14,7 @@ void
 explorar_texto(FILE* file) {
   char caracter = getc(file);
   while(caracter != EOF) {
-    printf("hoal");
+    
   }
 }
 
@@ -26,8 +26,19 @@ crea_arreglo_frecuencia(struct frecuencia arr[]) {
   for(i = 0; i < TAMANO; i++) {
     c = ALFABETO[i];
     aux.letra = c;
-    printf("%c\n",c);
     aux.repeticion = 0;
     arr[i] = aux;
+  }
+}
+
+int
+buscar_carcater(char caracter) {
+  char aux;
+  int i;
+  for (i = 0; i < TAMANO; i++) {
+    aux = ALFABETO[i];
+    if (aux == caracter) {
+      return i;
+    }
   }
 }
