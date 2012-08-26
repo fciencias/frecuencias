@@ -16,6 +16,7 @@ int main(int argc, char *argv[]) {
   }
   crea_arreglo_frecuencia(arreglo_de_letras);
   explorar_texto(archivo, arreglo_de_letras);
+  selectionsort(arreglo_de_letras);
   imprime_lista_de_frecuencias(arreglo_de_letras);
 
   return EXIT_SUCCESS;

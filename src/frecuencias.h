@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 #define ALFABETO "abcdefghijklmnopqrstuvwxyz"
+#define ALFABETOMAYUS "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 #define TAMANO 26
 
 struct frecuencia {
@@ -35,6 +36,8 @@ aumentar(char caracter, struct frecuencia arr[]);
 void
 imprime_lista_de_frecuencias(struct frecuencia arr[]);
 
+void
+swap(struct frecuencia arr[], int posicionA, int posicionB);
 
 void
-sort(struct frecuencia arr[]);
+selectionsort(struct frecuencia arr[]);

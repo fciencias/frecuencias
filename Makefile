@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-c -Wall -Werror
+CFLAGS=-c -Wall -Werror -o contador
 LDFLAGS=
 SOURCES=src/frecuencias.c src/main.c 
 OBJECTS=$(SOURCES:.c=.o)
